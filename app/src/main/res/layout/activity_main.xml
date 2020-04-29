@@ -6,13 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <LinearLayout
+        android:layout_width="414dp"
+        android:layout_height="446dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginBottom="145dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+        <TextView
+            android:id="@+id/Information"
+            android:layout_width="match_parent"
+            android:layout_height="313dp"
+            android:gravity="center"
+            android:text="This App\nallow us to launch\nGoogle Maps\nhaving Montclair State\n as destination."
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColorLink="#00BD5656"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="169dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/round_button"
+            android:gravity="center"
+            android:onClick="Drive"
+            android:text="Drive To MSU"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
